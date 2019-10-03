@@ -11,19 +11,52 @@ body {
   color: #eeeeee;
 }
 
+button {
+  outline: none;
+}
+
 .navBar-links {
   color: #eeeeee;
+  outline: none;
+}
+
+.project-button-container {
+  padding-left: 160px;
+}
+
+.project-button {
+  background-color: #00adb5;
+  padding: 0;
+  border: none;
+  padding: 20px;
+  margin: 10px;
+}
+
+.about-icon {
+  width: 40px;
+  padding: 10px;
+}
+
+.contact-name {
+  width: 400px
+}
+
+.contact-email {
+  width: 404px;
+}
+
+.text-area {
+  width: 700px;
 }
 
 /* Project component grid css */
 
 .project-container {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  padding-top: 100px;
 }
 
 .project-title {
@@ -46,20 +79,129 @@ body {
   display: grid;
   grid-template-columns: 7fr 5fr;
   grid-template-rows: 300px 300px;
+  align-self: end;
 }
 
 @media (max-width: 1280px) {
   .project-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    padding-top: 0px;
+  }
+
+  .project-title {
+    display: grid;
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+  }
+
+  .project-image-grid {
+    display: grid;
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+    justify-items: center;
   }
 }
 
 @media (max-width: 900px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    padding-top: 10px;
+  }
+
   .project-image-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     justify-items: center;
   }
+}
+
+/* About component grid css */
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.about-text {
+  display: grid;
+  grid-column: 1 / 8;
+  align-self: start;
+}
+
+.about-image {
+  display: grid;
+  grid-column: 8 / 13;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: 70px 120px 70px 120px;
+  place-self: center;
+}
+
+.skill-grid-icon-1 {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+  align-items: center;
+}
+
+.skill-grid-text-1 {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 1 / 6;
+  align-items: center;
+}
+
+.skill-grid-icon-2 {
+  display: grid;
+  grid-column: 3 / 4;
+  grid-row: 1 / 5;
+  align-items: center;
+}
+
+.skill-grid-text-2 {
+  display: grid;
+  grid-column: 4 / 5;
+  grid-row: 1 / 5;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .about-text {
+    display: grid;
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+    align-self: start;
+  }
+
+  .about-image {
+    display: grid;
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+  }
+}
+
+/* contact component grid css */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
