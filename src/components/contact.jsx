@@ -10,13 +10,15 @@ const Contact = () => {
     >
       {props => (
         <div style={props}>
-          <div className="contact-grid pt6">
+          <div className="contact-grid">
+            <h1 className="contact-title f-headline">Contact Me</h1>
+
             <form
               action="mailto:alistair111@gmail.com"
               method="post"
               enctype="text/plain"
             >
-              <div className="flex justify-between pv2 ">
+              <div className="flex justify-between">
                 <label for="exampleFormControlInput1">Name</label>
                 <input
                   type="name"
@@ -48,14 +50,14 @@ const Contact = () => {
                 ></textarea>
               </div>
               <input
-                className="f6 link dim br3 ba ph3 pv2 mb2 dib black"
+                className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer"
                 type="submit"
                 name=""
               />
             </form>
             <div>
-              <h1>E-mail: alistair111@gmail.com</h1>
-              <h1>Telephone: 07711994575</h1>
+              <h3>E-mail: alistair111@gmail.com</h3>
+              <h3>Telephone: 07711994575</h3>
             </div>
           </div>
         </div>

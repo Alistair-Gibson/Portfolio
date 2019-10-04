@@ -15,24 +15,23 @@ export default function Projects() {
         {props => (
           <div style={props}>
             <div className="project-container">
-              <Link to="projects3" className="previous-link arrow">
+              <Link to="projects2" className="previous-link arrow">
                 &#8249;
               </Link>
               <div className="project-title pa4">
                 <h1 className="f-headline">
-                  Personal Artist <br></br>Website
+                  Bird a Week <br></br> React App
                 </h1>
                 <hr className="content-divider-top" />
                 <hr className="content-divider-bottom" />
                 <p className="measure">
-                  A clean simple artist portfolio site that I made for my own
-                  work demonstrating html and CSS markup, as well as some
-                  JavaScript implementation in the image gallery.<br></br> My
-                  main concern with this project was to make a site that was
-                  easy to navigate responsive and let the paintings speak for
-                  themselves as much as possible. I used it as an opportunity to
-                  get to grips with grid layouts as well as the JavaScript
-                  required for the modal images.
+                  React web app that I created to present a series of drawings
+                  that I have started, I will be drawing a different bird a week
+                  messing with the style and level of detail and this app will
+                  present them week by week.<br></br> The site scales the cards
+                  with the images and text on based of the items in a JavaScript
+                  array ultimately I plan to move this information to an
+                  external database and create an API for the interaction.
                 </p>
 
                 <div className="project-button-container pt4">
@@ -67,7 +66,7 @@ export default function Projects() {
                   />
                 </div>
               </div>
-              <Link to="/projects2" className="next-link arrow">
+              <Link to="/projects" className="next-link arrow">
                 &#8250;
               </Link>
             </div>

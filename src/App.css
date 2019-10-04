@@ -15,13 +15,33 @@ button {
   outline: none;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .navBar-links {
   color: #eeeeee;
   outline: none;
 }
 
-.project-button-container {
-  padding-left: 160px;
+.content-divider-top {
+  border-color: #00adb5;
+  border-width: 5px;
+  border-style: solid;
+  width: 150px;
+  margin: 0px 0px 10px 50px;
+  border-radius: 10px
+}
+
+.content-divider-bottom {
+  border-color: #00adb5;
+  border-width: 5px;
+  border-style: solid;
+  width: 150px;
+  margin: 0px 0px 20px 150px;
+  border-radius: 10px
 }
 
 .project-button {
@@ -30,6 +50,18 @@ button {
   border: none;
   padding: 20px;
   margin: 10px;
+  width: 175px;
+}
+
+.arrow {
+  text-decoration: none;
+  color: #00adb5;
+  font-size: 200px;
+  margin: 10px;
+}
+
+.arrow:hover {
+  color: #eeeeee;
 }
 
 .about-icon {
@@ -49,6 +81,20 @@ button {
   width: 700px;
 }
 
+@media (max-width: 1280px) {
+  .content-divider-top {
+    margin: 0px 100px 10px 0px;
+  }
+
+  .content-divider-bottom {
+    margin: 0px 0px 20px 100px;
+  }
+
+  .project-button-container {
+    padding-left: 0px;
+  }
+}
+
 /* Project component grid css */
 
 .project-container {
@@ -56,15 +102,26 @@ button {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 30px;
+
+}
+
+.previous-link {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: center;
+  z-index: 3;
 }
 
 .project-title {
+  display: grid;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
   z-index: 2;
+  margin-left: 100px;
 }
 
 .project-image {
@@ -80,9 +137,19 @@ button {
   grid-template-columns: 7fr 5fr;
   grid-template-rows: 300px 300px;
   align-self: end;
+  margin-right: 100px;
 }
 
-@media (max-width: 1280px) {
+.next-link {
+  display: grid;
+  grid-column: 6 / 7;
+  grid-row: 1 / 2;
+  align-self: center;
+  justify-self: end;
+  z-index: 3;
+}
+
+@media (max-width: 1350px) {
   .project-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -91,10 +158,20 @@ button {
     padding-top: 0px;
   }
 
+  .previous-link {
+    justify-self: start;
+  }
+
+  .next-link {
+    justify-self: end;
+  }
+
   .project-title {
     display: grid;
     grid-column: 1 / 13;
     grid-row: 1 / 2;
+    justify-items: center;
+    margin-left: 0;
   }
 
   .project-image-grid {
@@ -102,6 +179,7 @@ button {
     grid-column: 1 / 13;
     grid-row: 2 / 3;
     justify-items: center;
+    margin-right: 0px;
   }
 }
 

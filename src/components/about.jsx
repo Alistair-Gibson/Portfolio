@@ -23,7 +23,7 @@ const About = () => {
           <div style={props}>
             <div className="about-container">
               <div className="about-text pl5 pr5">
-                <h1 className="f-headline pa2">About Me</h1>
+                <h1 className="f-subheadline">About Me</h1>
                 <p className="pa2">
                   I am a full stack web developer recently relocated to Exeter
                   originally trained as an artist I enjoy creating visually
@@ -41,7 +41,10 @@ const About = () => {
                   anything that might help me become a more resourceful and
                   effective creator.
                 </p>
-                <div className="skill-grid pt5">
+                <div>
+                  <h2 className="f1 center pa2">Skills</h2>
+                </div>
+                <div className="skill-grid pt2">
                   <div className="skill-grid-icon-1">
                     <div>
                       <img className="about-icon" src={html5} alt="css3" />
