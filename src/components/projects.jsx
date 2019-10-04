@@ -14,7 +14,7 @@ export default function Projects() {
         {props => (
           <div style={props}>
             <div className="project-container">
-              <div className="project-title">
+              <div className="project-title pa4">
                 <h1 className="f-headline">
                   Personal Artist <br></br>Website
                 </h1>
@@ -22,6 +22,7 @@ export default function Projects() {
                   Clean and simple artist portfolio website that I made for my
                   own work.
                 </p>
+                <border></border>
                 <div className="project-button-container pt4">
                   <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib">
                     View Site
