@@ -9,6 +9,11 @@ body {
   height: 100%;
   background-color: #222831;
   color: #eeeeee;
+  text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
 }
 
 button {
@@ -134,7 +139,7 @@ button {
 
 .project-image-grid {
   display: grid;
-  grid-template-columns: 7fr 5fr;
+  grid-template-columns: 6fr 5fr;
   grid-template-rows: 300px 300px;
   align-self: end;
   margin-right: 100px;
@@ -149,7 +154,27 @@ button {
   z-index: 3;
 }
 
-@media (max-width: 1350px) {
+/* @media (max-width: 1600px) {
+  .project-title {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 2;
+    margin-left: 100px;
+  }
+
+  .project-image {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 1;
+  }
+} */
+
+@media (max-width: 1580px) {
   .project-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -183,7 +208,7 @@ button {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .project-container {
     display: grid;
     grid-template-columns: 1fr;

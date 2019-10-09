@@ -1,8 +1,9 @@
 import React from "react";
 import { Spring } from "react-spring/renderprops";
 import { Link } from "react-router-dom";
-import imagePlaceholderH from "./images/imagePlaceholderH.png";
-import imagePlaceholderV from "./images/imagePlaceholderV.png";
+import Art1 from "./images/art1.png";
+import Art2 from "./images/art2.png";
+import Art3 from "./images/art3.png";
 
 export default function Projects() {
   return (
@@ -47,22 +48,22 @@ export default function Projects() {
               <div className="project-image project-image-grid">
                 <div>
                   <img
-                    className="pa2 img-top"
-                    src={imagePlaceholderH}
+                    className="pa2 image img-top"
+                    src={Art1}
                     alt="placeholder1"
                   />
                 </div>
                 <div>
                   <img
-                    className="pa2 img-bottom"
-                    src={imagePlaceholderV}
+                    className="pa2 image img-bottom"
+                    src={Art3}
                     alt="placeholder2"
                   />
                 </div>
                 <div>
                   <img
-                    className="pa2 img-right"
-                    src={imagePlaceholderH}
+                    className="pa2 image img-right"
+                    src={Art2}
                     alt="placeholder3"
                   />
                 </div>
