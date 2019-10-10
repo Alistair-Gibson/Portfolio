@@ -26,14 +26,14 @@ const Home = () => {
                       Projects
                     </button>
                   </Link>
-                  <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
+                  {/* <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
                     CV
-                  </button>
-                  {/* <form action="https://github.com/Alistair-Gibson"> */}
-                  <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
-                    GitHub
-                  </button>
-                  {/* </form> */}
+                  </button> */}
+                  <form action="https://github.com/Alistair-Gibson">
+                    <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
+                      GitHub
+                    </button>
+                  </form>
                 </div>
               </div>
               <div></div>

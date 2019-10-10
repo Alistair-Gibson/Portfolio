@@ -19,7 +19,7 @@ export default function Projects() {
                 &#8249;
               </Link>
               <div className="project-title pa4">
-                <h1 className="f-headline">
+                <h1 className="project-name">
                   Bird a Week <br></br> React App
                 </h1>
                 <hr className="content-divider-top" />
@@ -35,12 +35,16 @@ export default function Projects() {
                 </p>
 
                 <div className="project-button-container pt4">
+                  {/* <form action="https://github.com/Alistair-Gibson"> */}
                   <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
                     View Site
                   </button>
-                  <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
-                    View Code
-                  </button>
+                  {/* </form> */}
+                  <form action="https://github.com/Alistair-Gibson/Bird-a-Week">
+                    <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
+                      View Code
+                    </button>
+                  </form>
                 </div>
               </div>
               <div className="project-image project-image-grid">
