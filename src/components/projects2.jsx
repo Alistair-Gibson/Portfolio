@@ -1,8 +1,9 @@
 import React from "react";
 import { Spring } from "react-spring/renderprops";
 import { Link } from "react-router-dom";
-import imagePlaceholderH from "./images/imagePlaceholderH.png";
-import imagePlaceholderV from "./images/imagePlaceholderV.png";
+import blog1 from "./images/blog1.png";
+import blog2 from "./images/blog2.png";
+import blog3 from "./images/blog3.png";
 
 export default function Projects() {
   return (
@@ -35,37 +36,33 @@ export default function Projects() {
                 </p>
 
                 <div className="project-button-container pt4">
-                  {/* <form action="https://github.com/Alistair-Gibson"> */}
-                  <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
-                    View Site
-                  </button>
-                  {/* </form> */}
-                  {/* <form action="https://github.com/Alistair-Gibson"> */}
-                  <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
-                    View Code
-                  </button>
-                  {/* </form> */}
+                  <form action="https://mysterious-beyond-86170.herokuapp.com/">
+                    <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
+                      View Site
+                    </button>
+                  </form>
+                  <form action="https://github.com/Alistair-Gibson/Food-Blog">
+                    <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
+                      View Code
+                    </button>
+                  </form>
                 </div>
               </div>
               <div className="project-image project-image-grid">
                 <div>
-                  <img
-                    className="pa2 img-top"
-                    src={imagePlaceholderH}
-                    alt="placeholder1"
-                  />
+                  <img className="pa2 img-top" src={blog2} alt="placeholder1" />
                 </div>
                 <div>
                   <img
                     className="pa2 img-bottom"
-                    src={imagePlaceholderV}
+                    src={blog3}
                     alt="placeholder2"
                   />
                 </div>
                 <div>
                   <img
                     className="pa2 img-right"
-                    src={imagePlaceholderH}
+                    src={blog1}
                     alt="placeholder3"
                   />
                 </div>

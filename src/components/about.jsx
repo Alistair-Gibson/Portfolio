@@ -1,6 +1,6 @@
 import React from "react";
 import { Spring } from "react-spring/renderprops";
-import Placeholder from "./images/placeholder.png";
+import AboutImg from "./images/about-img.png";
 import html5 from "./icons/html5.svg";
 import css3 from "./icons/css3.svg";
 import javscript from "./icons/javascript.svg";
@@ -111,7 +111,7 @@ const About = () => {
                 </div>
               </div>
               <div className="about-image pa4">
-                <img src={Placeholder} alt="about" />
+                <img src={AboutImg} alt="about" />
               </div>
             </div>
           </div>
