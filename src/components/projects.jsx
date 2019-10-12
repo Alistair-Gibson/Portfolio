@@ -37,7 +37,7 @@ export default function Projects() {
                 </p>
 
                 <div className="project-button-container pt4">
-                  <form action="https://alistair-gibson.github.io/Alistair-Gibson-Art/oil.html">
+                  <form action="https://alistair-gibson.github.io/Alistair-Gibson-Art/index.html">
                     <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
                       View Site
                     </button>
