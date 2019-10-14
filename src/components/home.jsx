@@ -13,8 +13,8 @@ const Home = () => {
         {props => (
           <div style={props}>
             <div className="content flex">
-              <div className="pa5 main-title">
-                <h1 className="f-headline">Alistair Gibson</h1>
+              <div className="pa5 home-container">
+                <h1 className="f-headline home-title">Alistair Gibson</h1>
                 <hr className="content-divider-top" />
                 <hr className="content-divider-bottom" />
                 <h3 className="f2 fw2">

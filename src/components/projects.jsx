@@ -14,18 +14,18 @@ export default function Projects() {
         config={{ duration: 1000 }}
       >
         {props => (
-          <div style={props}>
+          <div className="project" style={props}>
             <div className="project-container">
               <Link to="projects3" className="previous-link arrow">
                 &#8249;
               </Link>
-              <div className="project-title pa4">
+              <div className="project-title">
                 <h1 className="project-name">
                   Personal Artist <br></br>Website
                 </h1>
                 <hr className="content-divider-top" />
                 <hr className="content-divider-bottom" />
-                <p className="measure">
+                <p className="project-text">
                   A clean simple artist portfolio site that I made for my own
                   work demonstrating html and CSS markup, as well as some
                   JavaScript implementation in the image gallery.<br></br> My
