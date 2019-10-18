@@ -19,7 +19,7 @@ export default function Projects() {
               <Link to="projects" className="previous-link arrow">
                 &#8249;
               </Link>
-              <div className="project-title pa4">
+              <div className="project-title">
                 <h1 className="project-name">
                   Blog with MongoDB<br></br> Database
                 </h1>
@@ -36,7 +36,7 @@ export default function Projects() {
                 </p>
 
                 <div className="project-button-container pt4">
-                  <form action="https://mysterious-beyond-86170.herokuapp.com/">
+                  <form action="https://unnamed-food-blog.herokuapp.com">
                     <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
                       View Site
                     </button>

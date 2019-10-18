@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Spring } from "react-spring/renderprops";
+import HomeImage from "./images/homeImage.png";
 
 const Home = () => {
   return (
@@ -12,8 +13,8 @@ const Home = () => {
       >
         {props => (
           <div style={props}>
-            <div className="content flex">
-              <div className="pa5 home-container">
+            <div className="home-grid">
+              <div className="pa5 home-title">
                 <h1 className="f-headline home-title">Alistair Gibson</h1>
                 <hr className="content-divider-top" />
                 <hr className="content-divider-bottom" />
@@ -36,7 +37,9 @@ const Home = () => {
                   </form>
                 </div>
               </div>
-              <div></div>
+              <div className="home-image">
+                <img className="birds-image" src={HomeImage} alt="HomeImage" />
+              </div>
             </div>
           </div>
         )}

@@ -1,8 +1,9 @@
 import React from "react";
 import { Spring } from "react-spring/renderprops";
 import { Link } from "react-router-dom";
-import imagePlaceholderH from "./images/imagePlaceholderH.png";
-import imagePlaceholderV from "./images/imagePlaceholderV.png";
+import birdWeek1 from "./images/birdWeek1.png";
+import birdWeek2 from "./images/birdWeek2.png";
+import birdWeek3 from "./images/birdWeek3.png";
 
 export default function Projects() {
   return (
@@ -18,7 +19,7 @@ export default function Projects() {
               <Link to="projects2" className="previous-link arrow">
                 &#8249;
               </Link>
-              <div className="project-title pa4">
+              <div className="project-title">
                 <h1 className="project-name">
                   Bird a Week <br></br> React App
                 </h1>
@@ -35,11 +36,11 @@ export default function Projects() {
                 </p>
 
                 <div className="project-button-container pt4">
-                  {/* <form action="https://github.com/Alistair-Gibson"> */}
-                  <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
-                    View Site
-                  </button>
-                  {/* </form> */}
+                  <form action="https://bird-a-week-project.netlify.com/">
+                    <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
+                      View Site
+                    </button>
+                  </form>
                   <form action="https://github.com/Alistair-Gibson/Bird-a-Week">
                     <button className="project-button f4 grow no-underline br-pill ph4 pv3 mb2 dib pointer">
                       View Code
@@ -51,21 +52,21 @@ export default function Projects() {
                 <div>
                   <img
                     className="pa2 img-top"
-                    src={imagePlaceholderH}
+                    src={birdWeek2}
                     alt="placeholder1"
                   />
                 </div>
                 <div>
                   <img
                     className="pa2 img-bottom"
-                    src={imagePlaceholderV}
+                    src={birdWeek3}
                     alt="placeholder2"
                   />
                 </div>
                 <div>
                   <img
                     className="pa2 img-right"
-                    src={imagePlaceholderH}
+                    src={birdWeek1}
                     alt="placeholder3"
                   />
                 </div>

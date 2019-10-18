@@ -9,11 +9,7 @@ body {
   height: 100vh;
   background-color: #222831;
   color: #eeeeee;
-  text-shadow:
-    0.07em 0 black,
-    0 0.07em black,
-    -0.07em 0 black,
-    0 -0.07em black;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
 }
 
 button {
@@ -37,7 +33,7 @@ button {
   border-style: solid;
   width: 150px;
   margin: 0px 0px 10px 50px;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .content-divider-bottom {
@@ -46,7 +42,7 @@ button {
   border-style: solid;
   width: 150px;
   margin: 0px 0px 20px 150px;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .project-name {
@@ -87,7 +83,7 @@ button {
 }
 
 .contact-name {
-  width: 400px
+  width: 400px;
 }
 
 .contact-email {
@@ -122,7 +118,7 @@ button {
     text-align: center;
   }
 
-  .home-container {
+  .home-title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,12 +137,40 @@ button {
   .project-text {
     max-width: 16em;
   }
-
 }
 
 @media (min-width: 769px) {
   .hamburger-toggle-button {
     display: none;
+  }
+}
+
+/* home component grid css */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.home-title {
+  grid-column: 1 / 9;
+  grid-row: 1 / 2;
+  z-index: 2;
+}
+
+.home-image {
+  display: grid;
+  grid-column: 5 / 13;
+  grid-row: 1 / 2;
+  align-items: center;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .home-grid {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -158,7 +182,6 @@ button {
   grid-template-columns: 1fr;
   align-items: center;
   padding-top: 30px;
-
 }
 
 .previous-link {
@@ -203,8 +226,6 @@ button {
   justify-self: end;
   z-index: 3;
 }
-
-
 
 /* @media (max-width: 1600px) {
   .project-title {
