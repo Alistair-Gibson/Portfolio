@@ -27,12 +27,12 @@ export default function Projects() {
                 <hr className="content-divider-bottom" />
                 <p className="measure">
                   React web app that I created to present a series of drawings
-                  that I have started, I will be drawing a different bird a week
-                  messing with the style and level of detail and this app will
-                  present them week by week.<br></br> The site scales the cards
-                  with the images and text on based of the items in a JavaScript
-                  array ultimately I plan to move this information to an
-                  external database and create an API for the interaction.
+                  that I have started. I will be drawing a different bird a
+                  week, messing with the style and level of detail and this app
+                  will present them week by week.<br></br> The site scales the
+                  cards with the images and text on, based off of the items in a
+                  JavaScript array. Ultimately I plan to move this information
+                  to an external database and create an API for the interaction.
                 </p>
 
                 <div className="project-button-container pt4">

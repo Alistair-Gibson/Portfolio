@@ -30,9 +30,9 @@ export default function Projects() {
                   will become a place where myself and my partner will write
                   about places we have eaten. We both enjoy trying interesting
                   new places and it will also potentially double as a travel
-                  blog.<br></br> The website utilizes a MongoDB database to sort
+                  blog.<br></br> The website utilises a MongoDB database to sort
                   and send the posts with a page on the site itself used to
-                  compose the post, the coding is done using Node.js.
+                  present the post; the coding is done using Node.js.
                 </p>
 
                 <div className="project-button-container pt4">

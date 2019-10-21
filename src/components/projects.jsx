@@ -27,10 +27,10 @@ export default function Projects() {
                 <hr className="content-divider-bottom" />
                 <p className="project-text">
                   A clean simple artist portfolio site that I made for my own
-                  work demonstrating html and CSS markup, as well as some
+                  work demonstrating, HTML and CSS markup, as well as some
                   JavaScript implementation in the image gallery.<br></br> My
                   main concern with this project was to make a site that was
-                  easy to navigate responsive and let the paintings speak for
+                  easy to navigate, responsive and let the paintings speak for
                   themselves as much as possible. I used it as an opportunity to
                   get to grips with grid layouts as well as the JavaScript
                   required for the modal images.
